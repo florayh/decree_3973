@@ -1,0 +1,36 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Doubly Robust DID: Land Use Outcomes (PS-Trimmed, Annual)}
+\label{tab:did_drdid_landuse}
+\begin{tabular}{lccc}
+\toprule
+ & DR-DID & Treated mean (pre) & $N$ \\
+\midrule
+Primary forest loss & 0.004* & 0.020 & 1,507,088 \\
+ & (0.002) & & \\
+[0.5em]
+Agriculture (total) & 0.050*** & 0.418 & 1,507,088 \\
+ & (0.010) & & \\
+[0.5em]
+Soy area & 0.016* & 0.031 & 1,507,088 \\
+ & (0.007) & & \\
+[0.5em]
+Pasture & 0.031** & 0.227 & 1,507,088 \\
+ & (0.010) & & \\
+[0.5em]
+Forest & -0.037** & 2.671 & 1,507,088 \\
+ & (0.012) & & \\
+[0.5em]
+Burned area & 0.044 & 0.160 & 1,507,088 \\
+ & (0.035) & & \\
+\midrule
+Covariates in OR/PS & Yes & & \\
+Sample & PS-trimmed & & \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small
+\item \textit{Notes:} DR-DID = Sant'Anna \& Zhao (2020) doubly robust estimator, implemented via the \texttt{did} package (Callaway \& Sant'Anna, 2021); ATT aggregated across post-treatment periods. The trimming propensity score includes elevation, slope, 2014 forest share, log population, and pre-treatment mean precipitation and temperature. The DR-DID propensity-score and outcome-regression models include elevation, slope, 2014 forest share, and log population. Sample: control grids with elevation $>$ 1800m dropped, then symmetric PS trimming (Crump et al.\ 2009): controls with PS $<$ 0.01 and treated with PS $>$ 0.99 dropped. Annual panel 2015--2022. SE clustered at municipality level (bootstrap). $^{+}p<0.1$, $^{*}p<0.05$, $^{**}p<0.01$, $^{***}p<0.001$.
+\end{tablenotes}
+\end{table}

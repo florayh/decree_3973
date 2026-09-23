@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Doubly Robust DID: Fire Outcomes (PS-Trimmed, Fire Season)}
+\label{tab:did_drdid_fire}
+\begin{tabular}{lccc}
+\toprule
+ & DR-DID & Treated mean (pre) & $N$ \\
+\midrule
+Total fires & 0.358*** & 0.236 & 6,028,352 \\
+ & (0.079) & & \\
+[0.5em]
+Natural grass fires & 0.056** & 0.053 & 6,028,352 \\
+ & (0.020) & & \\
+[0.5em]
+Forest/other veg. fires & 0.281*** & 0.146 & 6,028,352 \\
+ & (0.069) & & \\
+[0.5em]
+Ag. land fires & 0.020* & 0.037 & 6,028,352 \\
+ & (0.010) & & \\
+\midrule
+Covariates in OR/PS & Yes & & \\
+Sample & PS-trimmed & & \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small
+\item \textit{Notes:} DR-DID = Sant'Anna \& Zhao (2020) doubly robust estimator, implemented via the \texttt{did} package (Callaway \& Sant'Anna, 2021); ATT aggregated across post-treatment periods. The trimming propensity score includes elevation, slope, 2014 forest share, log population, and pre-treatment mean precipitation and temperature. The DR-DID propensity-score and outcome-regression models include elevation, slope, 2014 forest share, and log population. Sample: control grids with elevation $>$ 1800m dropped, then symmetric PS trimming (Crump et al.\ 2009): controls with PS $<$ 0.01 and treated with PS $>$ 0.99 dropped. Fire season months (Jul--Oct) only, 2015--2022. SE clustered at municipality level (bootstrap). $^{+}p<0.1$, $^{*}p<0.05$, $^{**}p<0.01$, $^{***}p<0.001$.
+\end{tablenotes}
+\end{table}

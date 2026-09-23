@@ -1,0 +1,42 @@
+\begin{table*}[t!]
+\centering
+\small
+\caption{DR-DID by Land Tenure: Land Use Outcomes}
+\label{tab:did_drdid_landuse_byland}
+\begin{tabular}{lcccccc}
+\toprule
+ & Lg. private & Sm. private & Communal & Untitled public & Indigenous & Protected \\
+\midrule
+Primary forest loss & -0.018$^{+}$ & 0.001 & -0.008 & 0.022*** & 0.002* & -0.000 \\
+ & (0.009) & (0.003) & (0.005) & (0.004) & (0.001) & (0.001) \\
+Treated mean (pre) & 0.035 & 0.037 & 0.037 & 0.022 & 0.007 & 0.010 \\
+[0.5em]
+Agriculture (total) & 0.117*** & 0.016$^{+}$ & 0.039*** & 0.062*** & 0.009*** & 0.008** \\
+ & (0.019) & (0.009) & (0.006) & (0.006) & (0.003) & (0.003) \\
+Treated mean (pre) & 1.000 & 1.814 & 0.453 & 0.464 & 0.045 & 0.138 \\
+[0.5em]
+Soy area & 0.026*** & 0.035* & 0.022*** & 0.005 & 0.000* & 0.002* \\
+ & (0.006) & (0.014) & (0.007) & (0.004) & (0.000) & (0.001) \\
+Treated mean (pre) & 0.111 & 0.251 & 0.045 & 0.044 & 0.000 & 0.008 \\
+[0.5em]
+Pasture & 0.075*** & -0.027 & -0.001 & 0.037*** & 0.002$^{+}$ & 0.007** \\
+ & (0.019) & (0.017) & (0.008) & (0.003) & (0.001) & (0.002) \\
+Treated mean (pre) & 0.578 & 0.490 & 0.198 & 0.239 & 0.021 & 0.071 \\
+[0.5em]
+Forest & -0.108*** & -0.018* & -0.040*** & -0.096*** & -0.013** & 0.002 \\
+ & (0.020) & (0.009) & (0.007) & (0.014) & (0.004) & (0.003) \\
+Treated mean (pre) & 1.355 & 1.803 & 3.056 & 2.442 & 3.319 & 3.131 \\
+[0.5em]
+Burned area & 0.076* & 0.061 & 0.070** & 0.168*** & 0.195** & 0.042 \\
+ & (0.031) & (0.037) & (0.026) & (0.020) & (0.068) & (0.028) \\
+Treated mean (pre) & 0.286 & 0.085 & 0.119 & 0.189 & 0.123 & 0.105 \\
+\midrule
+Treated & 10,861 & 5,065 & 6,613 & 28,832 & 22,133 & 24,180 \\
+Control & 2,288 & 2,441 & 9,193 & 10,595 & 5,719 & 14,695 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small
+\item \textit{Notes:} DR-DID ATT (Sant'Anna \& Zhao 2020; \texttt{did} package, Callaway \& Sant'Anna 2021) estimated separately for each tenure category. Dominant tenure = plurality (highest share $\geq$ 40\%). The trimming propensity score includes elevation, slope, 2014 forest share, log population, and pre-treatment mean precipitation and temperature. DR-DID nuisance models include elevation, slope, 2014 forest share, and log population. Symmetric PS trimming (Crump et al.\ 2009): within each tenure subset, controls with PS $<$ 0.01 and treated with PS $>$ 0.99 dropped; elevation $\leq$ 1800m for controls. Annual panel, 2015--2022. SE clustered at 20km super-grid level (bootstrap). $^{+}p<0.1$, $^{*}p<0.05$, $^{**}p<0.01$, $^{***}p<0.001$.
+\end{tablenotes}
+\end{table*}

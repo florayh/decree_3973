@@ -1,0 +1,45 @@
+\begin{table}[!h]
+\centering
+\caption{\label{tab:did_balance_ps_trimmed}Covariate balance before and after propensity score trimming}
+\centering
+\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{
+\fontsize{9}{11}\selectfont
+\begin{threeparttable}
+\begin{tabular}[t]{lcccccc}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{3}{c}{Before PS trimming} & \multicolumn{3}{c}{After PS trimming} \\
+\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-7}
+ & Treated & Control & SMD & Treated & Control & SMD\\
+\midrule
+Elevation (m) & 299.599 & 552.508 & -0.640 & 302.641 & 538.130 & -0.601\\
+Slope (degrees) & 3.649 & 9.304 & -0.801 & 3.731 & 8.956 & -0.755\\
+Forest cover 2014 (\%) & 64.566 & 85.436 & -0.628 & 67.318 & 85.244 & -0.548\\
+log(1 + Population) & 1.449 & 1.886 & -0.381 & 1.440 & 1.867 & -0.372\\
+Precipitation (mm) & 106.876 & 140.753 & -0.761 & 108.954 & 140.206 & -0.704\\
+\addlinespace
+Wind speed (m/s) & 0.789 & 0.471 & 1.415 & 0.774 & 0.473 & 1.374\\
+Private small (\%) & 6.186 & 6.438 & -0.013 & 6.314 & 6.450 & -0.007\\
+Private large (\%) & 20.779 & 4.894 & 0.547 & 19.821 & 5.009 & 0.517\\
+Campesino (\%) & 5.211 & 25.202 & -0.638 & 5.353 & 25.426 & -0.637\\
+Indigenous (\%) & 17.456 & 14.016 & 0.099 & 18.040 & 14.168 & 0.111\\
+\addlinespace
+Protected area (\%) & 30.635 & 20.552 & 0.236 & 31.005 & 19.821 & 0.262\\
+Forest reserve (\%) & 11.302 & 23.706 & -0.334 & 11.907 & 24.137 & -0.325\\
+Tierra fiscal (\%) & 26.428 & 25.466 & 0.024 & 26.199 & 25.291 & 0.023\\
+Fire count & 0.097 & 0.028 & 0.358 & 0.096 & 0.028 & 0.353\\
+Primary forest loss (km\textsuperscript{2}) & 0.020 & 0.009 & 0.225 & 0.020 & 0.008 & 0.224\\
+\addlinespace
+Agriculture total (km\textsuperscript{2}) & 0.476 & 0.158 & 0.415 & 0.418 & 0.158 & 0.367\\
+Soy area (km\textsuperscript{2}) & 0.050 & 0.002 & 0.240 & 0.031 & 0.002 & 0.189\\
+Pasture (km\textsuperscript{2}) & 0.234 & 0.040 & 0.453 & 0.227 & 0.041 & 0.436\\
+Forest (km\textsuperscript{2}) & 2.560 & 3.410 & -0.640 & 2.671 & 3.403 & -0.559\\
+Burned area (km\textsuperscript{2}) & 0.165 & 0.043 & 0.360 & 0.160 & 0.044 & 0.346\\
+\addlinespace
+Deforestation (km\textsuperscript{2}) & 0.030 & 0.016 & 0.222 & 0.030 & 0.016 & 0.222\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item Pre-treatment means for treated and control grids. SMD = standardized mean difference (pooled SD). Sample starts with elevation $\leq$ 1800m filter on controls, then symmetric PS trimming [0.01, 0.99] (Crump et al.\ 2009). Time-varying covariates averaged over the pre-treatment period (2015--2018). Climate and fire variables are monthly; land cover variables are annual (constant within year).
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}

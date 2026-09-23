@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Doubly Robust DID: Fire Outcomes (Decree Period Only)}
+\label{tab:did_drdid_fire_decree}
+\begin{tabular}{lccc}
+\toprule
+ & DR-DID & Treated mean (pre) & $N$ \\
+\midrule
+Total fires & 0.288*** & 0.234 & 4,730,688 \\
+ & (0.072) & & \\
+[0.5em]
+Natural grass fires & 0.025 & 0.052 & 4,730,688 \\
+ & (0.017) & & \\
+[0.5em]
+Forest/other veg. fires & 0.261*** & 0.143 & 4,730,688 \\
+ & (0.066) & & \\
+[0.5em]
+Ag. land fires & 0.003 & 0.039 & 4,730,688 \\
+ & (0.009) & & \\
+\midrule
+Covariates in OR/PS & Yes & & \\
+Sample & PS-trimmed & & \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small
+\item \textit{Notes:} DR-DID = Sant'Anna \& Zhao (2020) doubly robust estimator, implemented via the \texttt{did} package (Callaway \& Sant'Anna, 2021); ATT aggregated across post-treatment periods. SD~3973 decree period only: panel truncated at 2020. Fire season months (Jul--Oct), 2015--2020. Full 2020 fire season included (decree active for $\sim$85\% of Jul--Sep 2020; revoked 16 Sep 2020 by SD~4389). DR-DID nuisance models include elevation, slope, 2014 forest share, and log population. Sample: control grids with elevation $>$ 1800m dropped. SE clustered at municipality level (bootstrap). $^{+}p<0.1$, $^{*}p<0.05$, $^{**}p<0.01$, $^{***}p<0.001$.
+\end{tablenotes}
+\end{table}

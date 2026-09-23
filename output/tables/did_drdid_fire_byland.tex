@@ -1,0 +1,34 @@
+\begin{table*}[t!]
+\centering
+\small
+\caption{DR-DID by Land Tenure: Fire Outcomes}
+\label{tab:did_drdid_fire_byland}
+\begin{tabular}{lcccccc}
+\toprule
+ & Lg. private & Sm. private & Communal & Untitled public & Indigenous & Protected \\
+\midrule
+Total fires & 0.396*** & 0.067 & 0.354*** & 0.589*** & 0.508*** & 0.246*** \\
+ & (0.091) & (0.055) & (0.053) & (0.040) & (0.138) & (0.039) \\
+Treated mean (pre) & 0.403 & 0.310 & 0.370 & 0.282 & 0.104 & 0.112 \\
+[0.5em]
+Natural grass fires & 0.029 & 0.029* & 0.054*** & 0.139*** & 0.150 & 0.013 \\
+ & (0.060) & (0.014) & (0.011) & (0.014) & (0.115) & (0.017) \\
+Treated mean (pre) & 0.099 & 0.018 & 0.034 & 0.060 & 0.036 & 0.031 \\
+[0.5em]
+Forest/other veg. fires & 0.294*** & 0.115*** & 0.293*** & 0.407*** & 0.352*** & 0.236*** \\
+ & (0.057) & (0.032) & (0.046) & (0.034) & (0.043) & (0.034) \\
+Treated mean (pre) & 0.239 & 0.156 & 0.239 & 0.183 & 0.064 & 0.068 \\
+[0.5em]
+Ag. land fires & 0.073** & -0.076* & 0.007 & 0.043*** & 0.006* & -0.002 \\
+ & (0.025) & (0.033) & (0.018) & (0.009) & (0.003) & (0.003) \\
+Treated mean (pre) & 0.065 & 0.136 & 0.097 & 0.040 & 0.004 & 0.013 \\
+\midrule
+Treated & 10,861 & 5,065 & 6,613 & 28,832 & 22,133 & 24,180 \\
+Control & 2,288 & 2,441 & 9,193 & 10,595 & 5,719 & 14,695 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small
+\item \textit{Notes:} DR-DID ATT (Sant'Anna \& Zhao 2020; \texttt{did} package, Callaway \& Sant'Anna 2021) estimated separately for each tenure category. Dominant tenure = plurality (highest share $\geq$ 40\%). The trimming propensity score includes elevation, slope, 2014 forest share, log population, and pre-treatment mean precipitation and temperature. DR-DID nuisance models include elevation, slope, 2014 forest share, and log population. Symmetric PS trimming (Crump et al.\ 2009): within each tenure subset, controls with PS $<$ 0.01 and treated with PS $>$ 0.99 dropped; elevation $\leq$ 1800m for controls. Fire season (Jul--Oct), 2015--2022. SE clustered at 20km super-grid level (bootstrap). $^{+}p<0.1$, $^{*}p<0.05$, $^{**}p<0.01$, $^{***}p<0.001$.
+\end{tablenotes}
+\end{table*}

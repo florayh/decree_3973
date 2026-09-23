@@ -1,0 +1,34 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{DR-DID by Land Tenure: Fire Outcomes (Santa Cruz Treated Only)}
+\label{tab:did_drdid_fire_bydept_sc}
+\begin{tabular}{lcccccc}
+\toprule
+ & Lg. private & Sm. private & Communal & Untitled public & Indigenous & Protected \\
+\midrule
+Total fires & 0.364*** & -0.017 & 0.567*** & 0.618*** & 0.612*** & 0.317*** \\
+ & (0.077) & (0.052) & (0.091) & (0.054) & (0.089) & (0.036) \\
+Treated mean (pre) & 0.433 & 0.300 & 0.600 & 0.295 & 0.070 & 0.092 \\
+[0.5em]
+Natural grass fires & 0.074*** & 0.009* & 0.036*** & 0.075*** & 0.062 & 0.030** \\
+ & (0.015) & (0.004) & (0.009) & (0.015) & (0.047) & (0.010) \\
+Treated mean (pre) & 0.042 & 0.010 & 0.031 & 0.026 & 0.015 & 0.021 \\
+[0.5em]
+Forest/other veg. fires & 0.273*** & 0.079** & 0.504*** & 0.500*** & 0.543*** & 0.282*** \\
+ & (0.060) & (0.028) & (0.085) & (0.042) & (0.059) & (0.030) \\
+Treated mean (pre) & 0.281 & 0.155 & 0.421 & 0.214 & 0.050 & 0.057 \\
+[0.5em]
+Ag. land fires & 0.017 & -0.105** & 0.027 & 0.042** & 0.007** & 0.006$^{+}$ \\
+ & (0.037) & (0.039) & (0.028) & (0.014) & (0.003) & (0.003) \\
+Treated mean (pre) & 0.110 & 0.135 & 0.148 & 0.055 & 0.004 & 0.014 \\
+\midrule
+Treated & 12,004 & 6,084 & 2,973 & 21,643 & 11,842 & 35,558 \\
+Control & 2,315 & 2,501 & 10,252 & 12,178 & 5,713 & 16,822 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small
+\item \textit{Notes:} DR-DID ATT (Sant'Anna \& Zhao 2020; \texttt{did} package, Callaway \& Sant'Anna 2021) estimated separately for each tenure category. Treated grids restricted to Santa Cruz department; controls pool all non-treated departments. Dominant tenure = plurality (highest share $\geq$ 40\%); protected share is the capped sum of NPA and forest reserve coverage. Propensity score trimming and DR-DID nuisance models both include elevation, slope, 2014 forest share, and log population. Symmetric PS trimming (Crump et al.\ 2009): within each tenure subset, controls with PS $<$ 0.01 and treated with PS $>$ 0.99 dropped; elevation $\leq$ 1800m for controls. Fire season (Jul--Oct), 2015--2022. SE clustered at 20km super-grid level (bootstrap). $^{+}p<0.1$, $^{*}p<0.05$, $^{**}p<0.01$, $^{***}p<0.001$.
+\end{tablenotes}
+\end{table}

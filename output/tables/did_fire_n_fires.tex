@@ -1,0 +1,29 @@
+
+\begin{table}[htbp]
+   \caption{\label{tab:did_fire_n_fires} TWFE: Total fires}
+   \bigskip
+   \centering
+   \small
+   \begin{tabular}{lcccc}
+      \toprule
+       & \multicolumn{4}{c}{n\_fires}\\
+                             & (1)           & (2)           & (3)           & (4)\\  
+      \midrule 
+      Treated $\times$ Post  & 0.368$^{***}$ & 0.324$^{***}$ & 0.166$^{***}$ & 0.160$^{***}$\\   
+                             & (0.074)       & (0.061)       & (0.045)       & (0.044)\\   
+      Treated mean (pre)     & 0.234         & 0.234         & 0.147         & 0.147\\  
+      Climate controls       & No            & Yes           & No            & Yes\\  
+      Sample                 & Full          & Full          & PSM           & PSM\\  
+       \\
+      Observations           & 8,633,952     & 8,633,952     & 1,899,904     & 1,899,904\\  
+      R$^2$                  & 0.07487       & 0.07587       & 0.08157       & 0.08218\\  
+      ID FE                  & Yes           & Yes           & Yes           & Yes\\  
+      year\_month FE         & Yes           & Yes           & Yes           & Yes\\  
+      \bottomrule
+   \end{tabular}
+   
+   \par \raggedright 
+   Fire season months (Jul--Oct) only. SE clustered at municipality level. PSM specifications use nearest-neighbor 1:1 matching with caliper = 0.2 SD.
+\end{table}
+
+

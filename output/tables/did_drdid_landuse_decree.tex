@@ -1,0 +1,36 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Doubly Robust DID: Land Use Outcomes (Decree Period Only)}
+\label{tab:did_drdid_landuse_decree}
+\begin{tabular}{lccc}
+\toprule
+ & DR-DID & Treated mean (pre) & $N$ \\
+\midrule
+Primary forest loss & 0.004 & 0.020 & 1,182,672 \\
+ & (0.005) & & \\
+[0.5em]
+Agriculture (total) & 0.025*** & 0.476 & 1,182,672 \\
+ & (0.006) & & \\
+[0.5em]
+Soy area & 0.005 & 0.050 & 1,182,672 \\
+ & (0.004) & & \\
+[0.5em]
+Pasture & 0.018* & 0.234 & 1,182,672 \\
+ & (0.007) & & \\
+[0.5em]
+Forest & -0.023** & 2.560 & 1,182,672 \\
+ & (0.008) & & \\
+[0.5em]
+Burned area & 0.023 & 0.165 & 1,182,672 \\
+ & (0.045) & & \\
+\midrule
+Covariates in OR/PS & Yes & & \\
+Sample & PS-trimmed & & \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small
+\item \textit{Notes:} DR-DID = Sant'Anna \& Zhao (2020) doubly robust estimator, implemented via the \texttt{did} package (Callaway \& Sant'Anna, 2021); ATT aggregated across post-treatment periods. SD~3973 decree period only: panel truncated at 2020. Annual panel 2015--2020. Full 2020 included (decree active for $\sim$85\% of Jul--Sep 2020; revoked 16 Sep 2020 by SD~4389; MapBiomas captures full year). DR-DID nuisance models include elevation, slope, 2014 forest share, and log population. Sample: control grids with elevation $>$ 1800m dropped. SE clustered at municipality level (bootstrap). $^{+}p<0.1$, $^{*}p<0.05$, $^{**}p<0.01$, $^{***}p<0.001$.
+\end{tablenotes}
+\end{table}

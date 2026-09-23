@@ -1,0 +1,42 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{DR-DID by Land Tenure: Land Use Outcomes (Santa Cruz Treated Only)}
+\label{tab:did_drdid_landuse_bydept_sc}
+\begin{tabular}{lcccccc}
+\toprule
+ & Lg. private & Sm. private & Communal & Untitled public & Indigenous & Protected \\
+\midrule
+Primary forest loss & -0.022* & -0.001 & -0.019 & 0.028*** & 0.004$^{+}$ & 0.001 \\
+ & (0.009) & (0.003) & (0.012) & (0.006) & (0.002) & (0.001) \\
+Treated mean (pre) & 0.065 & 0.038 & 0.063 & 0.032 & 0.008 & 0.010 \\
+[0.5em]
+Agriculture (total) & 0.125*** & 0.005 & 0.076*** & 0.060*** & 0.010* & 0.003 \\
+ & (0.021) & (0.009) & (0.010) & (0.008) & (0.004) & (0.002) \\
+Treated mean (pre) & 1.277 & 1.894 & 0.713 & 0.546 & 0.061 & 0.108 \\
+[0.5em]
+Soy area & 0.028* & 0.100*** & 0.051** & 0.024*** & 0.001* & 0.011*** \\
+ & (0.012) & (0.027) & (0.016) & (0.005) & (0.000) & (0.003) \\
+Treated mean (pre) & 0.223 & 0.283 & 0.101 & 0.075 & 0.001 & 0.010 \\
+[0.5em]
+Pasture & 0.053* & -0.049* & -0.007 & 0.003 & -0.002* & -0.002 \\
+ & (0.026) & (0.020) & (0.014) & (0.005) & (0.001) & (0.001) \\
+Treated mean (pre) & 0.439 & 0.442 & 0.219 & 0.175 & 0.021 & 0.029 \\
+[0.5em]
+Forest & -0.117*** & -0.008 & -0.085*** & -0.146*** & -0.019** & -0.004 \\
+ & (0.020) & (0.008) & (0.012) & (0.020) & (0.006) & (0.003) \\
+Treated mean (pre) & 2.115 & 1.775 & 2.916 & 2.989 & 3.601 & 3.334 \\
+[0.5em]
+Burned area & 0.074** & 0.048 & 0.152*** & 0.195*** & 0.162*** & 0.140*** \\
+ & (0.028) & (0.048) & (0.045) & (0.028) & (0.039) & (0.024) \\
+Treated mean (pre) & 0.138 & 0.082 & 0.124 & 0.103 & 0.048 & 0.080 \\
+\midrule
+Treated & 12,004 & 6,084 & 2,973 & 21,643 & 11,842 & 35,558 \\
+Control & 2,315 & 2,501 & 10,252 & 12,178 & 5,713 & 16,822 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small
+\item \textit{Notes:} DR-DID ATT (Sant'Anna \& Zhao 2020; \texttt{did} package, Callaway \& Sant'Anna 2021) estimated separately for each tenure category. Treated grids restricted to Santa Cruz department; controls pool all non-treated departments. Dominant tenure = plurality (highest share $\geq$ 40\%); protected share is the capped sum of NPA and forest reserve coverage. Propensity score trimming and DR-DID nuisance models both include elevation, slope, 2014 forest share, and log population. Symmetric PS trimming (Crump et al.\ 2009): within each tenure subset, controls with PS $<$ 0.01 and treated with PS $>$ 0.99 dropped; elevation $\leq$ 1800m for controls. Annual panel, 2015--2022. SE clustered at 20km super-grid level (bootstrap). $^{+}p<0.1$, $^{*}p<0.05$, $^{**}p<0.01$, $^{***}p<0.001$.
+\end{tablenotes}
+\end{table}
