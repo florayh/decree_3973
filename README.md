@@ -15,7 +15,7 @@ This repository provides the necessary data and code required to replicate the a
 
 ### R version
 
-R >= 4.2.0
+R >= 4.2.0 (tested on R 4.6.1)
 
 ### R packages
 
@@ -26,6 +26,21 @@ install.packages(c(
   "kableExtra", "scales"
 ))
 ```
+
+Versions used during development:
+
+| Package | Version |
+|---------|---------|
+| `data.table` | 1.18.4 |
+| `fixest` | 0.14.2 |
+| `MatchIt` | 4.7.2 |
+| `did` | 2.5.1 |
+| `sf` | 1.1.2 |
+| `ggplot2` | 4.0.3 |
+| `patchwork` | 1.3.2 |
+| `tidyverse` | 2.0.0 |
+| `kableExtra` | 1.4.1 |
+| `scales` | 1.4.0 |
 
 System libraries required for spatial operations: `GDAL`, `PROJ`, `GEOS`
 (Usually installed via `apt install libgdal-dev libproj-dev libgeos-dev` on Linux, or via Homebrew on macOS.)
